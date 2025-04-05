@@ -411,6 +411,100 @@
             100% { transform: translateX(100%); }
         }
         
+        /* section -- blogs
+                /* Blogs Section */
+        #blogs {
+            padding: 100px 0;
+            background-color: #1a1a1a;
+            background: linear-gradient(rgba(26, 26, 26, 0.95), rgba(26, 26, 26, 0.95)), url('https://via.placeholder.com/1920x1080');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        #blogs .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        #blogs .section-title h2 {
+            font-size: 2.5rem;
+            color: #ffffff;
+            position: relative;
+            padding-bottom: 15px;
+            font-family: 'Orbitron', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        #blogs .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: #00e5ff;
+            box-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
+        }
+
+        .blogs-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .blog-card {
+            background-color: #2a2a2a;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 10px 25px rgba(0, 229, 255, 0.05);
+            border: 1px solid rgba(0, 229, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 229, 255, 0.2);
+        }
+
+        .blog-title {
+            color: #00e5ff;
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            font-family: 'Rajdhani', sans-serif;
+        }
+
+        .blog-date {
+            font-size: 0.9rem;
+            color: #999;
+            margin-bottom: 15px;
+        }
+
+        .blog-summary {
+            color: #ccc;
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        .read-more {
+            display: inline-block;
+            color: #00e5ff;
+            font-weight: bold;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.3s;
+        }
+
+        .read-more:hover {
+            border-bottom: 1px solid #00e5ff;
+        }
+
+
+
+        /*
         /* Projects Section */
         #projects {
             padding: 100px 0;
@@ -859,8 +953,10 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="#blogs">Blogs</a></li>
                     <li><a href="#resume">Resume</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    
                 </ul>
             </nav>
         </div>
@@ -1259,6 +1355,24 @@
 </div>
 </div>
 </section>
+
+
+<!--  blogs sections-->
+<section id="blogs">
+    <div class="section-title">
+      <h2>Blogs</h2>
+    </div>
+    <div class="blogs-container">
+      <div class="blog-card">
+        <div class="blog-title">Understanding RAG in Generative AI</div>
+        <div class="blog-date">March 22, 2025</div>
+        <div class="blog-summary">A beginner-friendly breakdown of Retrieval-Augmented Generation (RAG) and how it enhances LLMs with external knowledge...</div>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+      <!-- Add more blog-card blocks here -->
+    </div>
+  </section>
+  
 
 <!-- Resume Section -->
 <section id="resume">
