@@ -18,6 +18,8 @@
       background-color: #0d1117;
       color: #c9d1d9;
       display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
     }
     aside {
       width: 250px;
@@ -128,62 +130,44 @@
       border-radius: 12px;
       margin-bottom: 30px;
     }
-    /* For tablets (max-width: 1024px) */
-@media (max-width: 1024px) {
-  .skills-grid {
-    grid-template-columns: 1fr !important;
-  }
 
-  .skill-card {
-    width: 100% !important;
-  }
-}
-
-/* For mobile devices (max-width: 768px) */
-@media (max-width: 768px) {
-  body {
-    flex-direction: column;
-  }
-
-  aside {
-    position: static;
-    width: 100%;
-    height: auto;
-    border-right: none;
-    border-bottom: 1px solid #30363d;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
-  }
-
-  aside h2 {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  .dropdown summary {
-    font-size: 16px;
-  }
-
-  main {
-    margin-left: 0;
-    padding: 20px;
-  }
-
-  .skills-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .futuristic-bg {
-    height: 150px;
-  }
-}
-
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+      aside {
+        position: relative;
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid #30363d;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+      }
+      aside h2 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .dropdown summary {
+        font-size: 16px;
+      }
+      main {
+        margin-left: 0;
+        padding: 20px;
+      }
+      .skills-grid {
+        flex-direction: column;
+      }
+      .skill-card {
+        width: 100%;
+      }
+      .futuristic-bg {
+        height: 150px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -211,14 +195,11 @@
   <main>
     <h1>AI & Data Science Portfolio</h1>
     <p class="quote">“Code is the canvas. Data is the paint.”</p>
-
     <div class="futuristic-bg"></div>
-
     <div class="section" id="projects">
       <h2>Projects</h2>
       <p>Coming soon...</p>
     </div>
-
     <div class="section" id="skills">
       <h2>Skills</h2>
       <div class="skills-grid">
