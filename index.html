@@ -1,10 +1,221 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Welcome to My Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Siddhesh | AI & Data Science Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background-color: #0d1117;
+      color: #c9d1d9;
+      display: flex;
+    }
+    aside {
+      width: 250px;
+      background-color: #161b22;
+      height: 100vh;
+      padding: 30px 20px;
+      position: fixed;
+      border-right: 1px solid #30363d;
+    }
+    aside h2 {
+      font-size: 24px;
+      margin-bottom: 40px;
+      color: #58a6ff;
+    }
+    .dropdown {
+      margin-bottom: 30px;
+    }
+    .dropdown summary {
+      font-size: 18px;
+      cursor: pointer;
+      color: #f0f6fc;
+      list-style: none;
+      margin-bottom: 10px;
+    }
+    .dropdown a {
+      color: #8b949e;
+      display: block;
+      margin-left: 15px;
+      text-decoration: none;
+      margin-bottom: 8px;
+    }
+    .dropdown a:hover {
+      color: #58a6ff;
+    }
+    main {
+      margin-left: 270px;
+      padding: 40px;
+      flex: 1;
+    }
+    h1 {
+      font-size: 36px;
+      color: #f0f6fc;
+      margin-bottom: 10px;
+    }
+    .quote {
+      font-style: italic;
+      margin-bottom: 30px;
+      color: #8b949e;
+    }
+    .section {
+      margin-bottom: 60px;
+    }
+    .section h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #30363d;
+      padding-bottom: 10px;
+      color: #58a6ff;
+    }
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .skill-card {
+      background: linear-gradient(135deg, #20232a 0%, #0d1117 100%);
+      border: 1px solid #30363d;
+      border-radius: 10px;
+      padding: 20px;
+      width: calc(50% - 10px);
+      box-shadow: 0 0 10px rgba(88, 166, 255, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .skill-card:hover {
+      transform: translateY(-5px);
+    }
+    .skill-card h3 {
+      font-size: 20px;
+      color: #c9d1d9;
+      margin-bottom: 10px;
+    }
+    .skill-card ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .skill-card li {
+      margin-bottom: 8px;
+      color: #8b949e;
+      display: flex;
+      align-items: center;
+    }
+    .skill-card li i {
+      margin-right: 10px;
+      color: #58a6ff;
+      width: 20px;
+      text-align: center;
+    }
+    a.social {
+      color: #58a6ff;
+      text-decoration: none;
+      display: block;
+      margin-top: 10px;
+    }
+    .futuristic-bg {
+      background: url('https://images.unsplash.com/photo-1555435021-bae23e3ad7dd?auto=format&fit=crop&w=1470&q=80') no-repeat center center;
+      background-size: cover;
+      height: 200px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+    }
+  </style>
 </head>
 <body>
-    <h1>Hello, I'm Siddhesh! 🚀</h1>
-    <p>Welcome to my data science portfolio.</p>
+  <aside>
+    <h2>Siddhesh</h2>
+    <details class="dropdown">
+      <summary>About Me</summary>
+      <a href="#">AI Engineer with passion for LLMs & GenAI</a>
+    </details>
+    <details class="dropdown">
+      <summary>Socials</summary>
+      <a href="mailto:siddheshdeo2000@gmail.com" target="_blank">📧 Gmail</a>
+      <a href="https://www.google.com" target="_blank">🔗 LinkedIn</a>
+      <a href="https://www.google.com" target="_blank">🐱 GitHub</a>
+    </details>
+    <details class="dropdown">
+      <summary>Projects</summary>
+      <a href="#projects">My Work</a>
+    </details>
+    <details class="dropdown">
+      <summary>Skills</summary>
+      <a href="#skills">Technologies</a>
+    </details>
+  </aside>
+  <main>
+    <h1>AI & Data Science Portfolio</h1>
+    <p class="quote">“Code is the canvas. Data is the paint.”</p>
+
+    <div class="futuristic-bg"></div>
+
+    <div class="section" id="projects">
+      <h2>Projects</h2>
+      <p>Coming soon...</p>
+    </div>
+
+    <div class="section" id="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Natural Language Models</h3>
+          <ul>
+            <li><i class="fas fa-brain"></i>LSTMs</li>
+            <li><i class="fas fa-brain"></i>GRUs</li>
+            <li><i class="fas fa-brain"></i>RNNs</li>
+            <li><i class="fas fa-brain"></i>Transformers</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Statistical Machine Learning</h3>
+          <ul>
+            <li><i class="fas fa-chart-line"></i>Supervised Models</li>
+            <li><i class="fas fa-chart-line"></i>Unsupervised Models</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Generative AI</h3>
+          <ul>
+            <li><i class="fas fa-robot"></i>Large Language Models</li>
+            <li><i class="fas fa-robot"></i>RAG Applications</li>
+            <li><i class="fas fa-robot"></i>Fine Tuning LLMs</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Cloud</h3>
+          <ul>
+            <li><i class="fab fa-microsoft"></i>Azure AI Services</li>
+            <li><i class="fab fa-aws"></i>AWS GenAI Toolkit</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Other Tools</h3>
+          <ul>
+            <li><i class="fas fa-code"></i>FastAPI</li>
+            <li><i class="fas fa-code"></i>Flask</li>
+            <li><i class="fab fa-docker"></i>Docker</li>
+            <li><i class="fab fa-git-alt"></i>Git</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Data Management</h3>
+          <ul>
+            <li><i class="fas fa-database"></i>SQL</li>
+            <li><i class="fas fa-bolt"></i>Apache Spark</li>
+            <li><i class="fas fa-stream"></i>Kafka</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
